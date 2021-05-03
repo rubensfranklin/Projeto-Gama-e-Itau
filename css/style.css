@@ -1,0 +1,241 @@
+body, p, h1, ul, li, blockquote {
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: Georgia, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Estrutura Geral */
+
+.estrutura {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "content"
+    "footer"
+}
+
+.header {
+    grid-area: header;
+    background-color: #EC7000;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header nav a {
+    display: block;
+    padding: 10px;
+    color: white;
+    font-size: 1.125em;
+    background: rgba(0,0,0,.1);
+    border-radius: 5px;
+    transition: 0.1s;
+}
+
+.header nav a:hover {
+    background: rgba(0,0,0,.5);
+}
+
+.header li + li {
+    margin-left: 30px;
+}
+
+.logo{
+    max-width: 100px;
+}
+
+img {
+    max-width: 100px;
+}
+
+/* Conteudo central */
+
+.content {
+    grid-area: content;
+    margin: 0;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.col-wide {
+    grid-column: 1 / -1; /*usar depois*/
+}
+
+.imagem-1 {
+    max-width: 600px;
+    max-height: 550px;
+    width: auto;
+    height: auto;
+    align-self: end;
+    padding-top: 20px;
+}
+
+.imagem-2 {
+    max-width: 600px;
+    max-height: 550px;
+    width: auto;
+    height: auto;
+    padding-top: 20px;
+}
+
+*/Estilos do Content */
+
+p {
+    font-size: 1.2em;;
+    line-height: 1.6;
+    letter-spacing: -0.005em;
+    color: rgba(0,0,0,.7);
+}
+
+/* Titulo */
+
+.titulo {
+    color: #EC7000;
+    
+}
+.texto {
+    font-size: 1.2em;
+    line-height: 1.6;
+    letter-spacing: -0.005em;
+    color: rgba(0,0,0,.7);
+}
+
+.citacao{
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+    background: linear-gradient(135deg, #EC7000, #FFD191);
+}
+
+.citacao p{
+    font-size: 1.5em;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Footer */
+
+.footer {
+    grid-area: footer;
+    background: #EC7000;
+}
+
+.footer p {
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Estilizacao do Contador */
+
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.numeros_itau {
+    position: absolute;
+    margin-bottom: 375px;
+    font-size: 2.0em;
+}
+
+.mais_info {
+    position: absolute;
+    margin-top: 375px;
+    font-size: 1.3em;
+}
+
+.style_cont {
+  font-family: "Montserrat";
+  background-color: #f1f3f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  overflow: hidden;
+  margin: 0;
+  color: #4e4d4d;
+}
+
+.contador {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-gap: 1rem;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: inset 0 0 15px rgba(55, 84, 170, 0),
+    inset 0 0 20px rgba(255, 255, 255, 0), 7px 7px 15px rgba(55, 84, 170, 0.15),
+    -7px -7px 20px rgba(255, 255, 255, 1),
+    inset 0px 0px 4px rgba(255, 255, 255, 0.2);
+}
+
+.card {
+  line-height: 1.7;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+[class*="fa-"] {
+  font-size: 4rem;
+  filter: drop-shadow(0px 10px 15px rgba(55, 84, 170, 0.25));
+}
+
+.number {
+  font-family: "Mitr", "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
+  font-size: 2rem;
+}
+
+.fa-quora {
+  color: #b92b27;
+}
+
+.fa-facebook {
+  color: #3b5999;
+}
+
+.fa-code {
+  color: #34465d;
+}
+
+.fa-check {
+  color: #27ae60;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    padding: 1rem 0;
+  }
+}
