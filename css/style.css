@@ -143,14 +143,23 @@ p {
 /* Footer */
 
 .footer {
-    grid-area: footer;
-    background: #EC7000;
+  grid-area: footer;
+  background: #EC7000;
+  border-top: 1px solid #333;
+bottom: 0;
+left: 0;  
+position: relative;
+width: 100%;
+  
 }
 
 .footer p {
-    color: white;
-    text-align: center;
-    padding: 30px;
+  color: white;
+  text-align: center;
+  font-style: initial;
+  font-weight: bold;
+  padding: 30px;
+  
 }
 
 /* Estilizacao do Contador */
@@ -243,6 +252,7 @@ p {
 
  div{
     margin-top: 20px;
+    
   }
  
  
