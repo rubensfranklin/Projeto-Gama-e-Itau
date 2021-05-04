@@ -6,8 +6,6 @@ body, p, h1, ul, li, blockquote {
 
 body{
     font-family:sans-serif;
-    
-    text-align: -webkit-center;
 }
 
 li {
@@ -169,8 +167,6 @@ p {
 .footer {
   grid-area: footer;
   background: #EC7000;
-  position: relative;
-  margin-top: 10px;
 }
 
 .footer p {
