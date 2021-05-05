@@ -164,16 +164,28 @@ p {
 
 /* Footer */
 
+
 .footer {
   grid-area: footer;
   background: #EC7000;
+  border-top: 1px solid #333;
+  top: 2px;
+bottom: 0;
+left: 0;  
+position: static;
+width: 100%;
+  
 }
 
 .footer p {
   color: white;
   text-align: center;
+  font-style: initial;
+  font-weight: bold;
   padding: 30px;
+  
 }
+
 
 /* Estilizacao do Contador */
 
