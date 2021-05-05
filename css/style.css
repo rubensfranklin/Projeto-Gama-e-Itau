@@ -279,13 +279,17 @@ p {
 
 .footer {
   grid-area: footer;
-  background: #EC7000
+  background: #EC7000;
+  margin-top: 150px;
+ 
 }
 
 .footer p {
   color: white;
   text-align: center;
   padding: 30px;
+  margin-top: 50px;
+
 }
 
 /* Estilizacao da pagina Saiba Mais */
@@ -377,9 +381,10 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
   padding: 30px 40px;
   margin-top: 50px;
+  margin-bottom: 50px;
   box-sizing: border-box;
   border-radius: 8px;
   text-align: center;
@@ -425,5 +430,6 @@ p {
 @media (max-width: 680px) {
   .contact-form{
     margin-top: 110px;
+   
   }
 }
