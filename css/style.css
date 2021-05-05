@@ -372,14 +372,14 @@ p {
 
 .container_con{
   margin: 540px 0 0;
-  margin-top: 10px;
+  
 }
 
 .contact-form{
   width: 85%;
   max-width: 600px;
   background: #f1f1f1;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
     transform: translate(-50%,-50%);
