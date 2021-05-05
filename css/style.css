@@ -172,7 +172,7 @@ p {
   top: 2px;
 bottom: 0;
 left: 0;  
-position: static;
+position: relative;
 width: 100%;
   
 }
