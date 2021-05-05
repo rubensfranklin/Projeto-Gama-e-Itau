@@ -429,9 +429,9 @@ p {
   width: 100%;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
   .contact-form{
-    margin-top: 50px;
+    margin-top: 30px;
    
   }
 }
