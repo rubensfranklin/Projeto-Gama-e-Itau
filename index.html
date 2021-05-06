@@ -4,28 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Covid-19</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-      crossorigin="anonymous"
-    />
+    <title>Comvida2021 - Somente Boas Notícias Sobre a Pandemia</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="estrutura">
         <header class="header">
-            <a herf="#" class="logo"><img src="img/1.png" alt=""></a>
+            <a href="index.html" class="logo"><img src="img/logo.png" alt="Logotipo do site, com o texto 'COVID-19'"></a>
+        
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
                     <li><a href="saibaMais.html">Saiba mais</a></li>
-                    <li><a href="form.html">Contato</a></li>
+                    <li><a href="contatos.html">Contato</a></li>
                 </ul>
             </nav>
         </header>
+
+        <nav class="sidenav">
+            <div>
+              <div style="text-align:center"> 
+                <h2>Videos sobre o virus da Covid</h2>
+                <h3>Gripe Espanhola: a Pandemia que Varreu o Mundo em 1918</h3>
+                <video id="video1" width="110%">
+                  <source src="mov/Coronavírus_ entenda diferença entre covid-19 e pandemias como gripe espanhola.mp4" type="video/mp4">
+                  Your browser does not support HTML video.
+                </video>
+                <button onclick="playPause()">Play/Pause</button>
+                <button onclick="makeSmall()">Pequeno</button> 
+                <button onclick="makeNormal()">Normal</button>
+                <button onclick="makeBig()">Grande</button>
+                <br><br>
+              </div> 
+              
+              <script> 
+              var myVideo = document.getElementById("video1"); 
+              
+              function playPause() { 
+                if (myVideo.paused) 
+                  myVideo.play(); 
+                else 
+                  myVideo.pause(); 
+              } 
+              
+              function makeBig() { 
+                  myVideo.width = 900; 
+              } 
+              
+              function makeSmall() { 
+                  myVideo.width = 270; 
+              } 
+              
+              function makeNormal() { 
+                  myVideo.width = 420; 
+              } 
+              </script> 
+              
+              <p> <a href="https://www.youtube.com/watch?v=QylAltkkiOg" target="_blank">Clique aqui para ver no youtube</a>.</p>
+            </div>
+          </nav>
+          
 
         <main class="content">
             <div class="titulo">
@@ -38,7 +77,7 @@
                      <p><a href="saibaMais.html">Saiba mais</a></p>
                     </p>
                 </div>
-                <img class="imagem-1" src="img/coronavirus-derrotando-o-virus-bbc-1617112086748_v2_900x506.jpg" alt="">
+                <img class="imagem-1" src="img/coronavirus-derrotando-o-virus-bbc-1617112086748_v2_900x506.jpg" alt="Uma mesa com uma cadeira e um enfermeiro lançando raios em direção ao covid-19, representado por várias células em formato de um círculo, com várias pernas na cor preta, tendo a cor rosa como fundo da imagem.">
             </div> 
             
             <div class="titulo">
@@ -52,7 +91,7 @@
                      <p><a href="saibaMais.html">Saiba mais</a></p>
                     </p>
                 </div>
-                <img class="imagem-2" src="img/coronavirus-mascara-gov-sc.jpg" alt=""> 
+                <img class="imagem-2" src="img/coronavirus-mascara-gov-sc.jpg" alt="Uma moça na cor de pele branca, com os cabelos castanhos presos, vestindo   roupa cirúrgica segurando uma máscara em direção ao seu rosto, tendo como fundo  uma parede branca"> 
             </div>
 
             <div class="titulo">
@@ -67,7 +106,7 @@
                      <p><a href="saibaMais.html">Saiba mais</a></p>
                     </p>
                 </div>
-                <img class="imagem-2" src="img/virus_covid.png" alt="">   
+                <img class="imagem-2" src="img/virus_covid.png" alt="Uma mulher na janela de um hospital, com roupa cirúrgica, com uma touca, luvas na cor verde e máscara facial, fazendo  um sinal de joia, tendo como fundo  uma janela e uma parede brancas.">   
             </div>
 
             <div class="titulo">
@@ -82,8 +121,7 @@
                      <p><a href="saibaMais.html">Saiba mais</a></p>
                     </p>
                 </div>
-                <img class="imagem-2" src="img/SI_426_linfoma.jpg" alt="">    
-            </div>
+                <img class="imagem-2" src="img/SI_426_linfoma.jpg" alt="Várias células cancerígenas na cores roxo e cinza, tendo a cor branca como fundo da imagem.">                </div>
 
             <blockquote class="citacao col-wide">
                 <p><b>
@@ -104,7 +142,7 @@
                      <p><a href="saibaMais.html">Saiba mais</a></p>
                     </p>
                 </div>
-                <img class="imagem-2" src="img/imagem.artigo-1920x960.jpg" alt="">    
+                <img class="imagem-2" src="img/imagem.artigo-1920x960.jpg" alt="Planeta terra com duas folhas na cor azul claro e um círculo azul escuro acima  dele;  ao  seu lado direito,  com uma mão dentro do círculo,   pessoas de ambos os sexos, em desenhos animados,tendo como fundo o  planeta terra na cor azul claro.">    
             </div>
 
             <div class="titulo">
@@ -153,6 +191,29 @@
                 </div>
             </div>
         </main>
+
+        <aside class="audio">
+            <div class="anuncio-item" style="text-align:center">
+              <h2>Audios sobre o virus da Covid</h2>
+              <h3> Brasil atinge a marca de 400mil mortos por Covid-19</h3>
+              <audio controls >
+                <source src="mp3/coronavirus-brasil-atinge-a-tragica-marca-de-400-mil-mortos.mp3" 
+                type="audio/mpeg">
+              </audio>
+              <h3>6 boas noticias após um ano de pandemia</h3>
+              <audio controls autoplay>
+                <source src="mp3/6-boas-noticias-apos-um-ano-de-pandemia-apesar-da-tragedia-no-brasil.mp3" 
+                type="audio/mpeg">
+              </audio>
+              </audio>
+              <h3>Vacinacao em massa reduz casos de coronavirus pela metade</h3>
+              <audio controls >
+                <source src="mp3/vacinacao-em-massa-reduz-casos-de-coronavirus-pela-metade.mp3" 
+                type="audio/mpeg">
+              </audio>
+              </div>
+          </aside>
+          
 
         <footer class="footer">
             <p> Grupo X © 2021. Trabalho realizado para o desafio Itaú. </p>
