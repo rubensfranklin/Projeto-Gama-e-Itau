@@ -280,15 +280,16 @@ p {
 .footer {
   grid-area: footer;
   background: #EC7000;
-  margin-top: 150px;
+  margin-top: 50px;
  
 }
 
 .footer p {
   color: white;
   text-align: center;
-  padding: 30px;
-  margin-top: 50px;
+  font-display: inherit;
+  padding: 10px;
+  margin-top: 20px;
 
 }
 
@@ -300,6 +301,21 @@ p {
     box-shadow: 0 15px 25px (0,0,0,0.4);
   
   }
+
+  .container_sxx{
+    
+    color: #EC7000;
+    padding: 40px;
+      box-shadow: 0 15px 25px (0,0,0,0.4);
+    
+    }
+    .texto{
+      display: inline;
+      width: 150px;
+      height: 200px;
+    
+     
+    }
   
   .container_sm p a{
   color: #000;
@@ -369,8 +385,12 @@ p {
   
   }
 
-  
+  /* Estilizacao da pagina sobre */
+
+
+ 
 /* Estilizacao da pagina contatos */
+
 
 .container_con{
   margin: 540px 0 0;
