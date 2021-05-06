@@ -368,6 +368,22 @@ p {
   padding: 5px 10px;
   
   }
+  /* Estilizacao da pagina Sobre */
+.texto{
+
+  margin-top: 10%;
+  display: flex;
+    width: 100%;
+ 
+ 
+}
+
+.LI-profile-badge{
+
+  width: 50%;
+  height: 50&;
+}
+
   
 /* Estilizacao da pagina contatos */
 
