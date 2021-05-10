@@ -391,6 +391,10 @@ p {
   
 }
 
+.form{
+  padding-top: 50px;
+}
+
 .contact-form{
   width: 85%;
   max-width: 600px;
